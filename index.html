@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="./Krish studio logo.png">
+    <title>KRISH STUDIO</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div id="logo">
+            <img src="./Krish studio logo.png" alt="">
+        </div>
+
+        <div id="nav-links">
+            <p><a href="#home" class="">Home</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#skills">Skills</a></p>
+            <p><a href="#contact">Contact</a></p>
+        </div>
+        <div id="bar" onclick="toggleNav()">
+            <i class="fa-solid fa-bars" onclick="show()"></i>
+        </div>
+    </nav>
+
+    <!-- x-navbar  -->
+
+    <div id="x-nav-links">
+        <p><a href="#home" onclick="closeNav()">Home</a></p>
+        <p><a href="#about" onclick="closeNav()">About</a></p>
+        <p><a href="#skills" onclick="closeNav()">Skills</a></p>
+        <p><a href="#contact" onclick="closeNav()">Contact</a></p>
+    </div>
+
+    <!-- Home section  -->
+
+    <section id="home">
+        <div class="text">
+            <h3>Hello👋 I'm <span class="name">Krishna M</span></h3>
+            <h1>Front-end Developer</h1>
+            <p>As a creative web developer, I combine my technical skills with a passion for design to bring your ideas
+                to life. Let's work together to build something amazing.🚀</p>
+
+            <div class="resume">
+                <i class="fa-solid fa-download"></i>
+                <a href="./Krishna Web dev  Resume.pdf" download="">My Resume</a>
+            </div>
+
+            <div class="contact-icon">
+                <a href="mailto:mspkrish47@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/krishna47/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Krishna-Krrish"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+        </div>
+
+        <div class="profile-img">
+            <img src="./portfolio profile 2.png" alt="">
+        </div>
+    </section>
+
+    <!-- About section  -->
+
+    <section id="about">
+        <div class="left-sec">
+            <img src="./about.jpg" alt="">
+        </div>
+
+        <div class="right-sec">
+            <h1>About Me</h1>
+            <p> An aspiring web developer with a passion for learning and creating. I'm currently on a journey to master
+                the fundamentals of web development and expand my skills in building dynamic and interactive websites.
+            </p>
+            <h2>Background & Education</h2>
+            <p>I hold a Bachelor of Science degree in Computer Science from Devanga Arts College, Aruppukottai,
+                Virudhunagar. Graduating with a CGPA of 6.65 in June 2022, I've laid the groundwork for my career in
+                programming and web development.</p>
+        </div>
+    </section>
+
+    <!-- Skill section  -->
+
+    <section id="skills">
+        <h1>My Skills</h1>
+        <h3>Programming Skills</h3>
+        <div class="gallery">
+            <div class="logo-img html">
+                <img src="/logo/html logo.png" alt="">
+                <div class="gallery-card">
+                    <h2>HTML</h2>
+                    <ul>
+                        <li>Proficient in creating well-structured, semantic HTML markup.</li>
+                        <li>Familiarity with HTML5 features and best practices.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo-img css">
+                <img src="/logo/css logo.png" alt="">
+                <div class="gallery-card">
+                    <h2>CSS</h2>
+                    <ul>
+                        <li>Strong understanding of CSS fundamentals including selectors, box model, and layout
+                            techniques.</li>
+                        <li>Experience in implementing responsive design principles using CSS media queries.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo-img bootstrap">
+                <img src="/logo/Bootstrap logo.png" alt="">
+                <div class="gallery-card">
+                    <h2>Bootstrap</h2>
+                    <ul>
+                        <li>Ability to utilize Bootstrap framework for responsive and mobile-first web development.</li>
+                        <li>Experience in customizing Bootstrap components and styles.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo-img js">
+                <img src="/logo/js logo.png" alt="">
+                <div class="gallery-card">
+                    <h2>JavaScript</h2>
+                    <ul>
+                        <li>Solid understanding of JavaScript fundamentals such as variables, data types, and functions.
+                        </li>
+                        <li>Knowledge of DOM manipulation and event handling.</li>
+                        <li>Familiarity with modern ES6+ features.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h3>Designing Skills</h3>
+
+        <div class="gallery2">
+            <div class="logo-img">
+                <img src="/logo/ps logo.png" alt="">
+                <div class="gallery-card">
+                    <h2>Photoshop</h2>
+                    <ul>
+                        <li>Proficient in Adobe Photoshop for creating and editing raster graphics.</li>
+                        <li>Experience in designing web elements such as banners, logos, and icons.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo-img">
+                <img src="/logo/figma logo.png" alt="">
+                <div class="gallery-card">
+                    <h2>Figma</h2>
+                    <ul>
+                        <li>Familiarity with Figma for designing user interfaces and interactive prototypes.</li>
+                        <li>Ability to collaborate with team members and stakeholders using Figma's collaborative
+                            features.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <h3>Additional Skills</h3>
+
+        <div class="gallery3">
+
+            <div class="additional-card">
+                <img src="./Effective-People-and-COmms.jpg" alt="">
+                <h4>Communication </h4>
+                <p>Effective communicator with strong collaboration, active listening, and presentation abilities,
+                    facilitating seamless interaction and understanding.</p>
+            </div>
+
+            <div class="additional-card">
+                <img src="./Problem-Solving-Skills.jpg" alt="">
+                <h4>Problem-Solving</h4>
+                <p>Strong problem-solving skills and ability to troubleshoot technical issues.</p>
+            </div>
+
+            <div class="additional-card">
+                <img src="/Effective-Time-Management-Skills-Course.jpg" alt="">
+                <h4>Time Management</h4>
+                <p>Effective time management skills to prioritize tasks and meet deadlines. same type make
+                    communication.</p>
+            </div>
+
+            <div class="additional-card">
+                <img src="./self-l.jpg" alt="">
+                <h4>Self-Learning</h4>
+                <p>Proven ability to self-learn and adapt to new technologies.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section id="contact">
+
+        <div class="contact-sec">
+            <div class="mail-in-git">
+                <a href="mailto:mspkrish47@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/krishna47/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Krishna-Krrish"><i class="fa-brands fa-github"></i></a>
+            </div>
+
+            <div class="contact-no">
+
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+918489489128</span>
+                </div>
+
+                <div class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>8489489128</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="address">
+            <i class="fa-solid fa-location-dot" style="color:black"></i>
+            <span>1/3169 Bharathiyar Street, <br>
+                Pandian Nagar,VNR,
+                <br> TN
+            </span>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
