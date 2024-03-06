@@ -663,6 +663,9 @@ a {
     .additional-card{
         margin:5px;
     }
+      #contact{
+        font-size: 12px;
+    }
 
 }
 
@@ -705,6 +708,6 @@ a {
     }
 
     #contact{
-        font-size: 11px;
+        font-size: 10px;
     }
 }
